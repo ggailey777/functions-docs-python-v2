@@ -1,7 +1,7 @@
 import azure.functions as func
 import logging
 
-app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
+app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 
 @app.route(route="HttpExample")
 @app.queue_output(arg_name="msg", queue_name="outqueue", connection="AzureWebJobsStorage")
