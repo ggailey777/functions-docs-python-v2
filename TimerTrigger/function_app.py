@@ -1,7 +1,7 @@
 import azure.functions as func
 import logging
 
-app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
+app = func.FunctionApp()
 
 # A timer trigger function which repeats every 5 seconds and only accepts HTTP "GET" and "POST" requests.
 @app.timer_trigger(schedule="5 * * * * *", arg_name="myTimer", methods=["GET", "POST"], run_on_startup=True,
