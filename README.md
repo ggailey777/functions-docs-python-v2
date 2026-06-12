@@ -1,6 +1,24 @@
-# Azure Functions quickstart sample repository for Python v2
+# Azure Functions Python v2 sample snippets repository
 
-This repository contains the Python v2 model source code for quickstarts featured in [Azure Functions documentation](https://learn.microsoft.com/azure/azure-functions/).
+This repository contains Python v2 model source code snippets used as `:::code` includes in [Azure Functions documentation](https://learn.microsoft.com/azure/azure-functions/). It is **not** intended as a standalone sample or project template.
+
+## Contents
+
+| Folder/File | Purpose |
+|-------------|---------|
+| `host.json` | Extension bundle configuration (referenced by docs) |
+| `EventHubTrigger/` | Event Hubs trigger function example |
+| `TimerTrigger/` | Timer trigger function example |
+| `function_app.py` | Main function app entry point |
+
+## Canonical scenario repositories
+
+If you're looking for complete, deployable Azure Functions projects in Python, use these `azd`-compatible templates instead:
+
+- [functions-quickstart-python-http-azd](https://github.com/Azure-Samples/functions-quickstart-python-http-azd) — HTTP trigger
+- [functions-quickstart-python-azd-timer](https://github.com/Azure-Samples/functions-quickstart-python-azd-timer) — Timer trigger
+- [functions-quickstart-python-azd-cosmosdb](https://github.com/Azure-Samples/functions-quickstart-python-azd-cosmosdb) — Azure Cosmos DB trigger
+- [functions-quickstart-python-azd-eventhub](https://github.com/Azure-Samples/functions-quickstart-python-azd-eventhub) — Event Hubs trigger
 
 ## Contributing
 
